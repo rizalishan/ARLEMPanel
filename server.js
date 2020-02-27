@@ -29,14 +29,14 @@ app.use('/dist', express.static(path.resolve(__dirname, './dist')))
 app.use(expressValidator())
 require('./backend/helpers/checkError')(app)
 require('./build/dev-server')(app)
-require('./backend/services')(app)
+// require('./backend/services')(app)
 
 app.get('*', (req, res) => {
   res.write(indexHTML)
   res.end()
 })
 
-const port = process.env.PORT || 8080
+const port = process.env.PORT || 8081
 app.listen(port, () => {
   console.log(`server started at http://127.0.0.1:${port}`)
 })

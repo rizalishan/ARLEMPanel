@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "",
-    "database": "db_new",
+    "password": "root",
+    "database": "arlem-dev",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
