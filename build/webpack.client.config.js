@@ -7,7 +7,7 @@ const config = Object.assign({}, base, {
 })
 
 config.plugins.push(
-  new ExtractTextPlugin(mainConfig.baseUrl.replace('/', '') + '/assets/styles.css')
+  new ExtractTextPlugin(mainConfig.baseUrl.replace('/', '') + 'assets/styles.css')
 )
 
 module.exports = config
